@@ -1,0 +1,22 @@
+app:
+  datasource:
+        jdbc-url: jdbc:postgresql://localhost:5432/paymentdb
+        username: postgres
+        password: password
+        pool-size: 30
+
+
+
+
+server:
+  port : 8089
+
+  eureka:
+    client:
+      serviceUrl:
+            defaultZone: http://localhost:8761/eureka
+    instance:
+       preferIpAddress: true
+spring:
+  application:
+    name: payment-client
